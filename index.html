@@ -7,16 +7,113 @@
     <title>Bus Ticket</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+<style>
+    /* .btn-container kbd,span{
+       width:60px;
+    } */
+    .btn-container span{
+        text-align: right;
+    }
+</style>
+
 </head>
 
-<body>
+<body class="max-w-[1200px] mx-auto">
    <header>
+    <nav>
+
+    </nav>
+    <section>
+
+    </section>
 
    </header>
 
    <main>
 
+<section class="flex gap-10 my-[100px]">
+    <div class=" btn-container grid grid-cols-5 w-[35%] gap-5">
+        <span>A</span>
+       <kbd class="kbd btn0">A1</kbd>
+       <kbd class="kbd btn0">A2</kbd>
+       <kbd class="kbd btn0">A3</kbd>
+       <kbd class="kbd btn0">A4</kbd>
+       <span>B</span>
+       <kbd class="kbd btn0">B1</kbd>
+       <kbd class="kbd btn0">B2</kbd>
+       <kbd class="kbd btn0">B3</kbd>
+       <kbd class="kbd btn0">B4</kbd>
+       <span>C</span>
+       <kbd class="kbd btn0">C1</kbd>
+       <kbd class="kbd btn0">C2</kbd>
+       <kbd class="kbd btn0">C3</kbd>
+       <kbd class="kbd btn0">C4</kbd>
+       <span>D</span>
+       <kbd class="kbd btn0">D1</kbd>
+       <kbd class="kbd btn0">D2</kbd>
+       <kbd class="kbd btn0">D3</kbd>
+       <kbd class="kbd btn0">D4</kbd>
+       <span>E</span>
+       <kbd class="kbd btn0">E1</kbd>
+       <kbd class="kbd btn0">E2</kbd>
+       <kbd class="kbd btn0">E3</kbd>
+       <kbd class="kbd btn0">E4</kbd>
+       <span>F</span>
+       <kbd class="kbd btn0">F1</kbd>
+       <kbd class="kbd btn0">F2</kbd>
+       <kbd class="kbd btn0">F3</kbd>
+       <kbd class="kbd btn0">F4</kbd>
+       <span>G</span>
+       <kbd class="kbd btn0">G1</kbd>
+       <kbd class="kbd btn0">G2</kbd>
+       <kbd class="kbd btn0">G3</kbd>
+       <kbd class="kbd btn0">G4</kbd>
+       <span>H</span>
+       <kbd class="kbd btn0">H1</kbd>
+       <kbd class="kbd btn0">H2</kbd>
+       <kbd class="kbd btn0">H3</kbd>
+       <kbd class="kbd btn0">H4</kbd>
+       <span>I</span>
+       <kbd class="kbd btn0">I1</kbd>
+       <kbd class="kbd btn0">I2</kbd>
+       <kbd class="kbd btn0">I3</kbd>
+       <kbd class="kbd btn0">I4</kbd>
+       <span>J</span>
+       <kbd class="kbd btn0">J1</kbd>
+       <kbd class="kbd btn0">J2</kbd>
+       <kbd class="kbd btn0">J3</kbd>
+       <kbd class="kbd btn0">J4</kbd>
+           
+    </div>
+    <div class= " w-[40%] p-10 rounded-xl space-y-3">
+        
+        <div class="bg-slate-100 p-6 space-y-2">
+        <h4 class="flex flex-row justify-between font-bold"><span> Seat<span id="seat-booked" class=" bg-green-700 text-white px-2 rounded-sm ml-1">0</span></span><span class="">Class</span><span class="">Price</span></h4>
+        <hr class="border-y-2">
+        <div id="seat-details">
 
+hello
+
+      </div>
+      <hr class="border-y-2">
+      <h4 id="total" class="flex flex-row justify-between font-bold"><span>Total Price</span><span>BDT <span id="total-price">0.00</span></span></h4>
+      <div id="vanish" class="bb">
+      <input disabled id="copun" class="border px-10 py-3" placeholder="Have any copupon?" type="text"><button  id="apply-btn" class=" text-white bg-green-700 py-3 px-5 ">Apply</button>
+      </div>
+      <div id="replace">
+
+      </div>
+      <h4 class="flex flex-row justify-between font-bold"><span>Grand Total</span><span>BDT <span id="grand-total">0.00</span></span></h4>
+      </div>
+      <span>Passenger Name*</span>
+      <input type="text" class="block w-[90%] py-3 rounded-xl border" placeholder="Enter your name" name="" id="" required>
+      <span>Phone Number*</span>
+      <input type="number" class="block w-[90%] py-3 rounded-xl border" placeholder="Enter your phone number" name="" id="" required>
+      <span>Email ID</span>
+      <input type="email" class="block w-[90%] py-3 rounded-xl  border" placeholder="Enter your email id" name="" id="" required>
+      <button class="next-btn w-[90%] bg-green-700 text-white py-3 rounded-xl">Next</button>
+    </div>
+</section>
    </main>
    
    <script src="jscode.js"></script>
