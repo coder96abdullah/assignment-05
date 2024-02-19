@@ -1,6 +1,9 @@
 // const btns=document.querySelectorAll('.kbd'); 
 let count = 0;
 const arr = [];
+document.getElementById('buy-btn').addEventListener('click',function(){
+    document.getElementById('mains').scrollIntoView({behavior:'smooth'});
+})
 for (const btn of document.querySelectorAll('.kbd')) {
     btn.addEventListener('click', function () {
         if (arr.includes(btn.innerText))
