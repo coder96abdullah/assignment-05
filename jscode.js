@@ -17,7 +17,7 @@ for (const btn of document.querySelectorAll('.kbd')) {
 
                 btn.classList.add('bg-green-700', 'text-white');
                 document.getElementById('seat-booked').innerText = count;
-                document.getElementById('seat-leaft').innerText=document.getElementById('seat-leaft').innerText-count;
+                document.getElementById('seat-leaft').innerText=document.getElementById('seat-leaft').innerText-1;
                 const num = document.createElement('p');
                 num.innerText = btn.innerText + ' --------------------Economy--------------- ' + '550';
                 document.getElementById('seat-details').appendChild(num);
